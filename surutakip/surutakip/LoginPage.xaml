@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="surutakip.LoginPage">
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <StackLayout VerticalOptions="Start" HorizontalOptions="FillAndExpand" BackgroundColor="#39b54a" HeightRequest="50">
+
+        </StackLayout>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+            <Image Source="logo.png" HeightRequest="120" Aspect="AspectFit"/>
+            <Label Text="Sürü Takip Sistemi" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="Black"/>
+
+            <Label Text="İşletme Kodu" Margin="20,40,0,0" TextColor="Black" FontAttributes="Bold"/>
+            <Entry TextColor="Black" IsPassword="True" Margin="20,0,20,0" FontAttributes="Bold" Keyboard="Numeric"/>
+            <Button BackgroundColor="#39b54a" TextColor="Black" FontAttributes="Bold" Text="Giriş" CornerRadius="10" TextTransform="None" Margin="20,0,20,0" Clicked="Button_Clicked"/>
+
+        </StackLayout>
+        <StackLayout VerticalOptions="End" HorizontalOptions="FillAndExpand" BackgroundColor="#39b54a" HeightRequest="50" Padding="0,0,0,0">
+            <Label Text="v1" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="Black" Margin="0,0,0,0"/>
+            <Label x:Name="DeviceId" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="Black" Margin="0,-5,0,0"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

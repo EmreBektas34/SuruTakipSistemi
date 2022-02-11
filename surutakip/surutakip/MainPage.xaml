@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="surutakip.MainPage">
+
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <StackLayout VerticalOptions="Start" HorizontalOptions="FillAndExpand" BackgroundColor="#39b54a" HeightRequest="50" MinimumHeightRequest="50" Orientation="Horizontal">
+            <ImageButton Source="exit" BackgroundColor="Transparent" BorderColor="Transparent" BorderWidth="0"  HeightRequest="30" WidthRequest="30" VerticalOptions="CenterAndExpand" HorizontalOptions="Start" Margin="20,0,0,0"/>
+            <Label Text="Sürü Takip Sistemi" FontAttributes="Bold" TextColor="Black" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" FontSize="20" Margin="-25,0,0,0"/>
+        </StackLayout>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical" >
+
+            <Frame BackgroundColor="White" HeightRequest="63" HasShadow="True" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Margin="20,0,20,0" CornerRadius="10" Padding="0,0,0,0">
+
+                <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,0,0,0" Padding="0,0,0,0">
+
+                    <Image Source="gps" BackgroundColor="White" HeightRequest="50" WidthRequest="50"/>
+                    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                        <Label Text="Cihaz Sayısı" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" Margin="0,0,0,0" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+                        <Label Text="Aktif Cihaz Sayısı" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" Margin="0,-8,0,0" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+                        <Label Text="Pasif Cihaz Sayısı" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" Margin="0,-8,0,0" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+                    </StackLayout>
+                    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                        <Label Text=":" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" Margin="0,0,0,0" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+                        <Label Text=":" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" Margin="0,-8,0,0" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+                        <Label Text=":" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" Margin="0,-8,0,0" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+                    </StackLayout>
+                    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                        <Label Text="50" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" Margin="0,0,0,0" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+                        <Label Text="25" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" Margin="0,-8,0,0" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+                        <Label Text="25" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" Margin="0,-8,0,0" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <StackLayout VerticalOptions="Start" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" MinimumHeightRequest="63" Orientation="Horizontal">
+                <Frame BackgroundColor="White" HeightRequest="63" HasShadow="True" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Margin="20,0,2,0" CornerRadius="10" Padding="0,0,0,0">
+
+                    <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,0,0,0" Padding="0,0,0,0">
+
+                        <Image Source="heart" BackgroundColor="White" HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical">
+                            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                                <Label Text="Ortalama Nabız" HorizontalTextAlignment="Center" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" Margin="0,0,0,0" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+
+                            </StackLayout>
+
+                            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                                <Label Text="50 Bpm" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" Margin="0,-10,0,0" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="White" HeightRequest="63" HasShadow="True" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Margin="2,0,20,0" CornerRadius="10" Padding="0,0,0,0">
+
+                    <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,0,0,0" Padding="0,0,0,0">
+
+                        <Image Source="flame" BackgroundColor="White" HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical">
+                            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                                <Label Text="Ortalama Sıcaklık" HorizontalTextAlignment="Center" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" Margin="0,0,0,0" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+
+                            </StackLayout>
+
+                            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                                <Label Text="50 °C" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" Margin="0,-10,0,0" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            
+        
+            <Frame VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" CornerRadius="10" Margin="20,0,20,0" HasShadow="False">
+                   
+                       <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                    <Button ImageSource="gps" Text="Cihaz Listesi" BackgroundColor="#39b54a" CornerRadius="10" VerticalOptions="Start" HorizontalOptions="FillAndExpand" TextTransform="None" FontSize="14" FontAttributes="Bold" Clicked="Button_Clicked"/>
+                    <Button ImageSource="sheep" Text="Hayvan Listesi" BackgroundColor="#39b54a" CornerRadius="10" VerticalOptions="Start" HorizontalOptions="FillAndExpand" TextTransform="None" FontSize="14" FontAttributes="Bold" Clicked="Button_Clicked_1"/>
+                    <Button ImageSource="map" Text="Harita" BackgroundColor="#39b54a" CornerRadius="10" VerticalOptions="Start" HorizontalOptions="FillAndExpand" TextTransform="None" FontSize="14" FontAttributes="Bold" Clicked="Button_Clicked_2"/>
+                    <Button ImageSource="area" Text="Bölge İhlal Raporu" BackgroundColor="#39b54a" CornerRadius="10" VerticalOptions="Start" HorizontalOptions="FillAndExpand" TextTransform="None" FontSize="14" FontAttributes="Bold" Clicked="Button_Clicked_3"/>
+                </StackLayout>
+                  
+                </Frame>
+
+        </StackLayout>
+        <StackLayout VerticalOptions="End" HorizontalOptions="FillAndExpand" BackgroundColor="#39b54a" HeightRequest="50" Padding="0,0,0,0">
+           
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
